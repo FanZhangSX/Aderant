@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aderant", "Aderant\Aderant.csproj", "{D73BC5EC-A4BD-4FF1-8D56-2C6F03DBB4D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aderant.Tests", "Aderant.Tests\Aderant.Tests.csproj", "{CC149030-0CDD-4CD2-A7ED-2417B3EBA825}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D73BC5EC-A4BD-4FF1-8D56-2C6F03DBB4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D73BC5EC-A4BD-4FF1-8D56-2C6F03DBB4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D73BC5EC-A4BD-4FF1-8D56-2C6F03DBB4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D73BC5EC-A4BD-4FF1-8D56-2C6F03DBB4D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC149030-0CDD-4CD2-A7ED-2417B3EBA825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC149030-0CDD-4CD2-A7ED-2417B3EBA825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC149030-0CDD-4CD2-A7ED-2417B3EBA825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC149030-0CDD-4CD2-A7ED-2417B3EBA825}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C33B71B-DFC8-44D3-BCBD-71C2EA23FFE6}
+	EndGlobalSection
+EndGlobal
