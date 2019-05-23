@@ -56,16 +56,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestOverlap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Aderant\Aderant.csproj">
-      <Project>{D73BC5EC-A4BD-4FF1-8D56-2C6F03DBB4D5}</Project>
-      <Name>Aderant</Name>
+    <ProjectReference Include="..\Aderant.Overlap\Aderant.Overlap.csproj">
+      <Project>{2b1414ec-0fb0-4e6a-afc1-95f56f8476ef}</Project>
+      <Name>Aderant.Overlap</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
