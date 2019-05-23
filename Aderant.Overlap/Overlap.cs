@@ -109,7 +109,10 @@ namespace Aderant.Overlap
             var fragments = fragmentStrings.OrderByDescending(x => x.Length).ToList();
             fragmentStrings = fragments;
         }
-
+        /// <summary>
+        /// the entrance of program
+        /// </summary>
+        /// <returns></returns>
         public string MergeOverlap()
         {
             if(fragmentStrings == null || fragmentStrings.Count == 0)
