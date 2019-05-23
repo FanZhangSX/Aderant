@@ -68,19 +68,22 @@ namespace Aderant.Overlap.Tests
             };
 
             var overlap = new Overlap(fragments);
-
+            // to test 2 strings which are not relevant
             overlap.FindAndMergeOverlap(fragments, 2, 3, 2);
             Assert.AreEqual(fragments[2], "hat end");
             Assert.AreEqual(fragments[3], "t ends well");
 
+            // to test 2 strings which are overlaped 
             overlap.FindAndMergeOverlap(fragments, 0, 1, 3);
             Assert.AreEqual(fragments[1], "all is well that en");
             Assert.AreEqual(fragments[0], "");
 
+            // to test a string contains another
             overlap.FindAndMergeOverlap(fragments, 2, 4, 3);
             Assert.AreEqual(fragments[2], "hat end");
             Assert.AreEqual(fragments[4], "");
 
+            // to test a string is contained by another
             overlap.FindAndMergeOverlap(fragments, 5, 2, 3);
             Assert.AreEqual(fragments[2], "hat end");
             Assert.AreEqual(fragments[5], "");
