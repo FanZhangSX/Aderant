@@ -18,29 +18,39 @@ The program repeats the match/merge operation until only one fragment remains.
 Matching a pair of fragments means finding a position to align the two for the maximal overlapping match. In each round, 
 you find the pair of fragments in the collection with longest such overlap and merge them.
 Consider a collection with fragments s1-s4 shown below (extra spaces were inserted between letters for clarity):
+
 s1:   a l l   i s   w e l l
 s2:   e l l   t h a t   e n
 s3:   h a t   e n d
 s4:   t   e n d s   w e l l
 On the first round, the longest overlap found is a 6-character overlap between s2 and s3 when aligned as below:
-     e l l   t h a t   e n
-               h a t   e n d 
+
+e l l   t h a t   e n     
+          h a t   e n d 
 The fragments s2 and s3 would be removed and replaced with their merged result s5:
+
 s5:  e l l   t h a t   e n d 
 The new, merged fragment is a candidate for future rounds; the two fragments it was composed from are no longer considered. 
 On the next round, the longest overlap is 5 characters between s5 and s4 aligned as below:
-     e l l   t h a t   e n d
-                   t   e n d s   w e l l
+
+e l l   t h a t   e n d 
+              t   e n d s   w e l l
 The fragments s5 and s4 would be removed and replaced with their merged result s6:
+
 s6:  e l l   t h a t   e n d s   w e l l
+
 The last round merges s1 and s6 in their maximal overlap alignment of 3 characters:
       a l l   i s   w e l l
                       e l l   t h a t   e n d s   w e l l
+
 The one remaining fragment is the final result:
       a l l   i s   w e l l   t h a t   e n d s   w e l l
+
 A match is also possible when one fragment is completely contained within another. Consider:
+
 s1:    s   w e l l   t  h  a
 s2:    e l l
+
 The entire fragment s2 is contained within s1. When these two fragments are merged, the result is simply s1.
 Your program can break ties arbitrarily. If several pairs have the same maximal length overlap, 
 choose whichever pair you like to merge. If there are two equally maximal alignments for a pair 
