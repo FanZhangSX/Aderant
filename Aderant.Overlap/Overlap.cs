@@ -16,15 +16,7 @@ namespace Aderant.Overlap
         /// <param name="fragments"></param>
         public Overlap(string fragments)
         {
-            if(fragments == null)
-            {
-                fragmentStrings = null;
-            }
-            else
-            {
-                fragmentStrings = fragments.Split('\n').ToList();
-            }
-            
+            fragmentStrings = fragments == null? null : fragments.Split('\n').ToList();
         }
         /// <summary>
         /// construct a object by an array of string
